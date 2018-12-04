@@ -9,7 +9,6 @@ int main()
 {
 
     int tab[] = {5,7,3,14,45,2,1,8};
-
     int n = sizeof(tab)/sizeof(tab[0]);
 
     printf("Tablica przed posortowaniem:\n");
@@ -25,7 +24,7 @@ int main()
 
 int Partition(int A[],int p,int r){
     int x=A[r]; //element wyznaczajacy podział
-    int i=(p-1);
+    int i=(p-1); // indeks granicy
     for (int j=p; j<=(r-1); j++){
         if (A[j] <= x){
             i++;
